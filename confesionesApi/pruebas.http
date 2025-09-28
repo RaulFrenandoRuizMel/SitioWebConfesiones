@@ -1,0 +1,18 @@
+### mkldjndsjnkj
+
+POST http://localhost:3000/confesiones
+
+{
+    "titulo": "prueba",
+    "contenido":"contenido de prueba"
+}
+
+### mkldjndsjnkj
+
+POST http://localhost:3000/comentario
+
+{
+    "numero": 1,
+    "comentario": "Comentario prueba con HTTP"
+
+}
