@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/agregarconfesion.css">
+    <title>Confesiones Pagina Web</title>
+</head>
+
+<body>
+
+    <div id="fondo"></div>
+    <div id="capa_transparente"></div>
+
+    <div id="PaginaCentrada">
+        <header>
+            Confesiones
+        </header>
+
+        <div class="Confesion">
+            <div class="parte_superior">
+                <div class="titulo_numero_confesion">
+                    Nueva confesión
+                </div>
+            </div>
+            <div class="Titulo_confesion">
+                Escriba un título<br>
+                <input type="text" />
+            </div>
+            <div class="Confesion_texto">
+                Redacte su confesión<br>
+                <textarea rows="5"></textarea>
+            </div>
+            <div id="seccion_boton_publicar">
+                <button onclick="PublicarConfesion()">
+                    Publicar Confesión
+                </button>
+            </div>
+        </div>
+         
+    </div>
+
+</body>
+<script src="/js/conectar_agregar_confesiones.js"></script>
+</html>

@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Regular";
+    background-color: white;
+}
+
+#fondo{
+    background-image: url("../img/fondo.png");
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+#capa_transparente{
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.75;
+}
+
+#PaginaCentrada{
+    width: 700px;
+    z-index: 1;
+    background-color: #EFEBF9;
+    min-height: 100vh;
+}
+
+header{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+#seccion_agregar_confesion{
+    float: left;
+    width: calc(100% - 20px);
+    background-color: white;
+    padding: 10px;
+}
+
+#seccion_agregar_confesion button{
+    float: right;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    
+    border-width: 1px;
+}
+
+#seccion_agregar_confesion button:hover{
+    background-color: #EFEBF9;
+    cursor: pointer;
+}
+
+.Confesion{
+    float: left;
+    width: calc(100% - 60px - 20px);
+    background-color: white;
+    padding: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.parte_superior{
+    /*color: darkslategrey;*/
+    color: #5F5A67;
+}
+
+.titulo_numero_confesion{
+    float: left;
+    /*background-color: chocolate;*/
+}
+
+.numero_confesion{
+    float: left;
+    /*background-color: yellow;*/
+}
+
+.Titulo_confesion{
+    float: left;
+    width: 100%;
+    /*background-color: crimson;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.Confesion_texto{
+    float: left;
+    width: 100%;
+    /*background-color: cornflowerblue;*/
+    margin-bottom: 10px;
+}
+
+.titulo_reacciones{
+    float: left;
+    width: 100%;
+    background-color: brown;
+}
+.contenedor_emoticonos{
+    float: left;
+    width: 100%;
+    /*background-color: darkolivegreen;*/
+}
+
+.emoticono{
+    float: left;
+    /*width: 100px;*/
+    /*background-color: chocolate;*/
+    margin: 5px;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    padding: 5px;
+}
+
+.emoticono:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #EFEBF9;
+    border-radius: 10px;
+}
+
+.emoticono img{
+    /*float: left;*/
+    width: 30px;
+}
+
+.emoticono div{
+    /*float: left;*/
+    padding-left: 5px;
+    width: 100%;
+    /*background-color: crimson;*/
+    text-align: center;
+}
+
+.titulo_comentarios{
+    width: 100%;
+    float: left;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.seccion_comentarios{
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #DDDAD5;
+    width: 100%;
+}
+
+.Comentario{
+    float: right;
+    width: calc(100% - 40px - 40px);
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+.comentador{
+    float: left;
+    /*background-color: cyan;*/
+}
+
+.comentario_texto{
+    float: right;
+    width: calc(100% - 20px);
+}
+
+.seccion_mi_comentario{
+    float: left;
+    width: calc(100% - 35px);
+    /*background-color: beige;*/
+    background-color: #EFEBF9;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.seccion_mi_comentario button{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 1px;
+    float: left;
+}
+
+.seccion_mi_comentario button:hover{
+    color: #5F5A67;
+    background-color: #EFEBF9;
+    
+}
+
+.mi_comentario{
+    float: left;
+    /*background-color: aqua;*/
+    width: 100%;
+    display: none;
+}
+
+.boton_comentar{
+    display: block;
+}
+
+.mi_comentario input{
+    float: left;
+    padding: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    width: calc(100% - 80px - 10px - 40px);
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.mi_comentario button{
+    width: 80px;
+    float: right;
+}
