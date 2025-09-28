@@ -38,8 +38,8 @@ fetch("http://localhost:3000").then(recurso => recurso.json()).then(respuesta=>{
             Emoticonos[j].numero_reaccion = j;
             
             Emoticonos[j].addEventListener("click", function(evento){
-                alert(evento.currentTarget.numero_confesion);
-                alert(evento.currentTarget.numero_reaccion);
+                //alert(evento.currentTarget.numero_confesion);
+                //alert(evento.currentTarget.numero_reaccion);
 
                 const informacion_emoticon =
                 {
@@ -62,7 +62,7 @@ fetch("http://localhost:3000").then(recurso => recurso.json()).then(respuesta=>{
 
         const seccion_comentarios = arregloTarjetaConfesiones[i].querySelector(".seccion_comentarios");
 
-        const plantilla_comentario = arregloTarjetaConfesiones[i].querySelector(".Comentario");
+        const plantilla_comentario = arregloTarjetaConfesiones[i].querySelector(".Comentario ");
 
         for(j=0; j< respuesta.confesiones[i].comentarios.length; j++)
         {
@@ -70,7 +70,7 @@ fetch("http://localhost:3000").then(recurso => recurso.json()).then(respuesta=>{
 
             const comentador = clon_comentario.querySelector(".comentador");
 
-            comentador.innerHTML = "comentario" + (j + 1);
+            comentador.innerHTML = "Comentario " + (j + 1);
 
             seccion_comentarios.appendChild(clon_comentario);
 

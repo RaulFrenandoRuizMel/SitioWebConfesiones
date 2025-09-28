@@ -8,6 +8,12 @@
     src: url("../font/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'Titulo';
+  src: url("../DemonSlayer/bloodcrow.ttf") format('woff2'),
+}
+
+
 body{
     display: flex;
     justify-content: center;
@@ -16,7 +22,7 @@ body{
 }
 
 #fondo{
-    background-image: url("../img/fondo.png");
+    background-image: url("../img/diseño/wallpapersden.com_sabito-s-haori-kimetsu-no-yaiba-pattern_3840x2160.jpg");
     position: fixed;
     top: 0px;
     left: 0px;
@@ -37,23 +43,31 @@ body{
 #PaginaCentrada{
     width: 700px;
     z-index: 1;
-    background-color: #EFEBF9;
+    background-color: #00301c;
     min-height: 100vh;
 }
 
 header{
+    background-image: url("../img/diseño/CONFESIONES-28-9-2025.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*<a href="https://es.textstudio.com/">Generador de fuentes</a>*/
+    background-color: #250707;
     float: left;
     width: 100%;
+    height: 150px;
     text-align: center;
     font-size: 64px;
     margin-bottom: 50px;
     padding-top: 50px;
+    font-family:'Titulo';
 }
 
 #seccion_agregar_confesion{
     float: left;
     width: calc(100% - 20px);
-    background-color: white;
+    background-color: rgb(235, 133, 0);
     padding: 10px;
 }
 
@@ -68,7 +82,8 @@ header{
 }
 
 #seccion_agregar_confesion button:hover{
-    background-color: #EFEBF9;
+    background-color: #ffd900;
+    color: #eeecec;
     cursor: pointer;
 }
 
@@ -76,8 +91,23 @@ header{
     float: left;
     width: calc(100% - 60px - 20px);
     background-color: white;
+    /*background-image: url("../img/diseño/1131w-Z9eIMZSvnHg.webp");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30px;
     margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.Confesion {
+    float: left;
+    width: 81%;
+    background-color: white;
+    padding: 30px;
+    margin-left: 5%;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 30px;
@@ -90,12 +120,12 @@ header{
 
 .titulo_numero_confesion{
     float: left;
-    /*background-color: chocolate;*/
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;    /*background-color: chocolate;*/
 }
 
 .numero_confesion{
     float: left;
-    /*background-color: yellow;*/
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;    /*background-color: yellow;*/
 }
 
 .Titulo_confesion{
@@ -106,6 +136,8 @@ header{
     padding-bottom: 10px;
     font-size: 24px;
     font-weight: 700;
+  font-family: Georgia, serif;
+
 }
 
 .Confesion_texto{
@@ -113,6 +145,8 @@ header{
     width: 100%;
     /*background-color: cornflowerblue;*/
     margin-bottom: 10px;
+    font-family: "Lucida Sans", "Lucida Grande", sans-serif;
+
 }
 
 .titulo_reacciones{
@@ -144,6 +178,56 @@ header{
     border-radius: 10px;
 }
 
+.boton_emoticon_feliz:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #00a782;
+    border-radius: 10px;
+}
+.boton_emoticon_sorprendido:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #ffbebe;
+    border-radius: 10px;
+}
+.boton_emoticon_enojado:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(255, 120, 42);
+    border-radius: 10px;
+}
+.boton_emoticon_risa:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #2d4e96;
+    border-radius: 10px;
+}
+.boton_emoticon_dientes:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #005e00;
+    border-radius: 10px;
+}
+.boton_emoticon_triste:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #cab600;
+    border-radius: 10px;
+}
+.boton_emoticon_corazon:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #00cea1;
+    border-radius: 10px;
+}
+
 .emoticono img{
     /*float: left;*/
     width: 30px;
@@ -168,8 +252,10 @@ header{
     float: left;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #DDDAD5;
+    background-color: #3a0d0b;
     width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .Comentario{
@@ -187,21 +273,26 @@ header{
 
 .comentador{
     float: left;
+    font-family: "Lucida Sans", "Lucida Grande", sans-serif;
     /*background-color: cyan;*/
 }
 
 .comentario_texto{
     float: right;
     width: calc(100% - 20px);
+font-family: "Lucida Sans", "Lucida Grande", sans-serif;
+
 }
 
 .seccion_mi_comentario{
     float: left;
     width: calc(100% - 35px);
     /*background-color: beige;*/
-    background-color: #EFEBF9;
+    background-color: #00a782;
     padding: 5px;
     padding-left: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .seccion_mi_comentario button{
@@ -212,11 +303,12 @@ header{
     border-radius: 10px;
     border-width: 1px;
     float: left;
+    margin-bottom: 5px;
 }
 
 .seccion_mi_comentario button:hover{
-    color: #5F5A67;
-    background-color: #EFEBF9;
+    color: #e4e4e4;
+    background-color: #2784a1;
     
 }
 
@@ -237,9 +329,11 @@ header{
     padding-top: 4px;
     padding-bottom: 4px;
     font-size: 15px;
-    width: calc(100% - 80px - 10px - 40px);
-    border-radius: 10px;
+    width: 50%;
+    border-radius: 5px;
     border-width: 1px;
+    font-family: "Lucida Sans", "Lucida Grande", sans-serif;
+
 }
 
 .mi_comentario button{

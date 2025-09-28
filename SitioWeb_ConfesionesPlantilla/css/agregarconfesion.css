@@ -1,6 +1,7 @@
 .Titulo_confesion{
     font-size: 18px;
     font-weight: 200;
+    font-family: "Lucida Sans", "Lucida Grande", sans-serif;
 }
 
 .Titulo_confesion input{
@@ -10,7 +11,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 18px;
-    font-family: "Roboto Regular";
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*font-family: "Lucida Sans", "Lucida Grande", sans-serif;*/
     border-radius: 10px;
     border-width: 1px;
 }
@@ -26,6 +28,7 @@
     border-radius: 10px;
     border-width: 1px;
     resize: vertical;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #seccion_boton_publicar{
@@ -34,15 +37,20 @@
     /*background-color: blue;*/
     display: flex;
     justify-content: center;
+    border-radius: 10px;
 }
 
 #seccion_boton_publicar button{
     padding: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 10px;
+    border-width: 2px;
+
 }
 
 #seccion_boton_publicar button:hover{
-    background-color: #EFEBF9;
+    color: #e4e4e4;
+    background-color: #2784a1;
     cursor: pointer;
 }
